@@ -1,0 +1,18 @@
+TO Do List
+
+Create search bar for city
+create two dynamic boxes
+    one fields current weather
+        title element where it displays date
+            City name, date, icon rep of weather, humidity, and windspeed
+    one fields 5 day forcast
+        element that displays the date on each days forcast
+            date, icon rep of weather, humidity, and windspeed
+create element that displays names of cities that have been searched previous as buttons
+    those buttons should be clickable and when clicked take the user back to that cities weather report
+    
+
+
+
+things to create
+
