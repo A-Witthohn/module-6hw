@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>🌞 Weather Dashboard 🌧️ </title>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+
+
+    <section>
+        <h1>Seach for a City:</h1>
+        <form action="" id="search-form">
+            <input type="text" id="search-input" placeholder="Search a City!">
+            <button type="submit">Search</button>
+        </form>
+        <div id="previousSearch"></div>
+    </section>
+
+    <section class="currentConditions">
+        <h2>Current Conditions</h2>
+        <div id="cityName"></div>
+        <div id="date"></div>
+        <div id="emojiWeather"></div>
+        <div id="temp"></div>
+        <div id="humidity"></div>
+        <div id="windSpeed"></div>
+    </section>
+
+    <section class="futureConditions">
+        <h2>Five Day Forecast</h2>
+        
+        <div class="day-one">
+            <div class="date"></div>
+            <div class="emojiWeather"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>
+        </div>
+
+        <div class="day-two">
+            <div class="date"></div>
+            <div class="emojiWeather"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>
+        </div>
+
+        <div class="day-three">
+            <div class="date"></div>
+            <div class="emojiWeather"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>
+        </div>
+
+        <div class="day-four">
+            <div class="date"></div>
+            <div class="emojiWeather"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>
+        </div>
+
+        <div class="day-five">
+            <div class="date"></div>
+            <div class="emojiWeather"></div>
+            <div class="temp"></div>
+            <div class="windSpeed"></div>
+            <div class="humidity"></div>
+        </div>
+        
+
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
