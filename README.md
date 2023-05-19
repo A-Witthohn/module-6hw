@@ -33,4 +33,6 @@ THEN I am again presented with current and future conditions for that city
 
 ## Github & Deployment
 [Github Repository](https://github.com/A-Witthohn/module-6hw)
+
+
 [Deployment](https://a-witthohn.github.io/module-6hw)
