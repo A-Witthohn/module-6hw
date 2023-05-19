@@ -1,84 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>🌞 Weather Dashboard 🌧️ </title>
+
 </head>
+
 <body>
 
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1 class="gradient-title">Weather Dashboard</h1>
     </header>
 
 
-
-    <section>
-        <h1>Seach for a City:</h1>
-        <form action="" id="search-form">
-            <input type="text" id="search-input" placeholder="Search a City!">
-            <button type="submit">Search</button>
-        </form>
-        <div id="previousSearch"></div>
-    </section>
-
-    <section class="currentConditions">
-        <h2>Current Conditions</h2>
-        <div id="cityName"></div>
-        <div id="date"></div>
-        <div id="emojiWeather"></div>
-        <div id="temp"></div>
-        <div id="humidity"></div>
-        <div id="windSpeed"></div>
-    </section>
-
-    <section class="futureConditions">
-        <h2>Five Day Forecast</h2>
-        
-        <div class="day-one">
-            <div class="date"></div>
-            <div class="emojiWeather"></div>
-            <div class="temp"></div>
-            <div class="windSpeed"></div>
-            <div class="humidity"></div>
+    <div class="columns">
+        <div class="column is-one-third">
+            <section class="searchBox">
+                <h1 id="citySearch">Search for a City</h1>
+                <form action="" id="search-form">
+                    <input type="text" id="search-input" placeholder="Search a City">
+                    <button class="button is-primary" type="submit" id="searchBtn">Show me the Weather</button>
+                </form>
+                <ul id="previousSearch"></ul>
+            </section>
         </div>
 
-        <div class="day-two">
-            <div class="date"></div>
-            <div class="emojiWeather"></div>
-            <div class="temp"></div>
-            <div class="windSpeed"></div>
-            <div class="humidity"></div>
-        </div>
+        <div class="column">
+            <section class="currentConditions">
+                <h2 class="title is-2">Current Conditions</h2>
+                <div id="cityName"></div>
+                <p>test 1 CITY NAME</p>
+                <div id="date"></div>
+                <p>test 1 DATE</p>
+                <div id="emojiWeather"></div>
+                <p>test 1 Emoji</p>
+                <div id="temp"></div>
+                <p>test 1 TEMP</p>
+                <div id="humidity"></div>
+                <p>test 1 humidity</p>
+                <div id="windSpeed"></div>
+                <p>test 1 WindSpeed</p>
+            </section>
 
-        <div class="day-three">
-            <div class="date"></div>
-            <div class="emojiWeather"></div>
-            <div class="temp"></div>
-            <div class="windSpeed"></div>
-            <div class="humidity"></div>
+            <div class="futureConditions">
+                <h2 class="title is-2">Five Day Forecast</h2>
+              
+                <div class="columns card-container">
+                  <div class="column">
+                    <div class="card day-1">
+                      <div class="card-content">
+                        <div class="date">Day 1 Date</div>
+                        <div class="emojiWeather">Day 1 Emoji</div>
+                        <div class="temp">Day 1 Temp</div>
+                        <div class="windSpeed">Day 1 WindSpeed</div>
+                        <div class="humidity">Day 1 Humidity</div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="column">
+                    <div class="card day-2">
+                      <div class="card-content">
+                        <div class="date">Day 2 Date</div>
+                        <div class="emojiWeather">Day 2 Emoji</div>
+                        <div class="temp">Day 2 Temp</div>
+                        <div class="windSpeed">Day 2 WindSpeed</div>
+                        <div class="humidity">Day 2 Humidity</div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="column">
+                    <div class="card day-3">
+                      <div class="card-content">
+                        <div class="date">Day 3 Date</div>
+                        <div class="emojiWeather">Day 3 Emoji</div>
+                        <div class="temp">Day 3 Temp</div>
+                        <div class="windSpeed">Day 3 WindSpeed</div>
+                        <div class="humidity">Day 3 Humidity</div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="column">
+                    <div class="card day-4">
+                      <div class="card-content">
+                        <div class="date">Day 4 Date</div>
+                        <div class="emojiWeather">Day 4 Emoji</div>
+                        <div class="temp">Day 4 Temp</div>
+                        <div class="windSpeed">Day 4 WindSpeed</div>
+                        <div class="humidity">Day 4 Humidity</div>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="column">
+                    <div class="card day-5">
+                      <div class="card-content">
+                        <div class="date">Day 5 Date</div>
+                        <div class="emojiWeather">Day 5 Emoji</div>
+                        <div class="temp">Day 5 Temp</div>
+                        <div class="windSpeed">Day 5 WindSpeed</div>
+                        <div class="humidity">Day 5 Humidity</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-
-        <div class="day-four">
-            <div class="date"></div>
-            <div class="emojiWeather"></div>
-            <div class="temp"></div>
-            <div class="windSpeed"></div>
-            <div class="humidity"></div>
-        </div>
-
-        <div class="day-five">
-            <div class="date"></div>
-            <div class="emojiWeather"></div>
-            <div class="temp"></div>
-            <div class="windSpeed"></div>
-            <div class="humidity"></div>
-        </div>
-        
-
-    </section>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
+
 </html>
