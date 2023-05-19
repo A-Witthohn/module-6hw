@@ -90,7 +90,7 @@ font-weight: bold;
   }
 
   .date{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
   }
 
@@ -101,19 +101,19 @@ font-weight: bold;
   }
 
   .temp{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 
   }
 
   .windSpeed{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 
   }
 
   .humidity{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 
   }
